@@ -1,3 +1,3 @@
 # Repository description
 
-Java learning exercise for transforming linear-programming coefficient arrays into a proposed standard form.
+Java linear-programming standard-form converter with explicit constraint directions, slack/surplus variables, and regression checks.

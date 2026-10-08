@@ -22,15 +22,15 @@ Use a JDK and compile individual exercises separately; repeated class names may 
 javac "LinearProgramming.java"
 ```
 
-The JDK was unavailable for compilation checks in this review.
+Java compilation was checked with the Eclipse compiler and Java 21 runtime. With a local JDK, run `javac LinearProgramming.java LinearProgrammingTest.java` and `java LinearProgrammingTest`.
 
 ### Configuration and limitations
 
-The current conversion infers slack directions from coefficient sums. Constraint directions must be represented explicitly before this can be treated as a correct LP converter. This is not a verified optimization solver.
+The converter accepts explicit <=, >=, and = relations, adding a slack or surplus variable for each inequality. The original three-argument constructor assumes <= constraints. It converts equations and does not optimize an objective or implement simplex feasibility phases.
 
 ### Validation
 
-Reviewed on 2026-10-08. Repository structure and documentation were reviewed. No application runtime, training job, or platform-specific build was executed.
+Reviewed on 2026-10-08. Repository structure and documentation were reviewed. The converter compiled successfully, and its regression program passed checks for slack signs, equality constraints, dimensions, and the original coefficient-sum bug.
 
 ### Contributions
 
