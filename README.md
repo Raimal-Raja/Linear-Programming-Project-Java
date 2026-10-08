@@ -2,12 +2,11 @@
 
 Java learning exercise for transforming linear-programming coefficient arrays into a proposed standard form.
 
-## Repository guide
+## Setup and repository reference
 
-### Contents
+### Project structure
 
 - [LinearProgramming.java](LinearProgramming.java)
-- [README.md](README.md)
 
 ### Getting started
 
@@ -30,7 +29,11 @@ The converter accepts explicit <=, >=, and = relations, adding a slack or surplu
 
 ### Validation
 
-Reviewed on 2026-10-08. Repository structure and documentation were reviewed. The converter compiled successfully, and its regression program passed checks for slack signs, equality constraints, dimensions, and the original coefficient-sum bug.
+Audit: 2026-10-08. Repository structure, setup instructions and description were reviewed. Syntax checks do not establish full runtime correctness. External APIs, live scraping, GUI interaction, notebook training and production deployment were not comprehensively exercised.
+
+### Repository description
+
+The short GitHub description is provided in [REPOSITORY_DESCRIPTION.md](REPOSITORY_DESCRIPTION.md).
 
 ### Contributions
 
